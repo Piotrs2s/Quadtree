@@ -28,3 +28,13 @@ C:\Users\Piotrek\Studia\Geometria Obliczeniowa\QuadTree\QuadTree\obj\Debug\QuadT
 C:\Users\Piotrek\Studia\Geometria Obliczeniowa\QuadTree\QuadTree\obj\Debug\QuadTree.csproj.CoreCompileInputs.cache
 C:\Users\Piotrek\Studia\Geometria Obliczeniowa\QuadTree\QuadTree\obj\Debug\QuadTree.exe
 C:\Users\Piotrek\Studia\Geometria Obliczeniowa\QuadTree\QuadTree\obj\Debug\QuadTree.pdb
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\bin\Debug\QuadTree.exe.config
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\bin\Debug\QuadTree.exe
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\bin\Debug\QuadTree.pdb
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\obj\Debug\QuadTree.csprojResolveAssemblyReference.cache
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\obj\Debug\QuadTree.Form1.resources
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\obj\Debug\QuadTree.Properties.Resources.resources
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\obj\Debug\QuadTree.csproj.GenerateResource.Cache
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\obj\Debug\QuadTree.csproj.CoreCompileInputs.cache
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\obj\Debug\QuadTree.exe
+C:\Users\Piotrek\Studia\Geometria Obliczeniowa\Repo\QuadTree\Quadtree\QuadTree\obj\Debug\QuadTree.pdb

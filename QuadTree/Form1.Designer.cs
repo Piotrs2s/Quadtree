@@ -28,109 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.generateButton = new System.Windows.Forms.Button();
+            this.areaUnitSizeLabel = new System.Windows.Forms.Label();
+            this.areaUnitSizeTrackBar = new System.Windows.Forms.TrackBar();
+            this.normalRadioButton = new System.Windows.Forms.RadioButton();
+            this.randomRadioButton = new System.Windows.Forms.RadioButton();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.areaUnitSizeTrackBar)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(82, 11);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(501, 501);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox.Location = new System.Drawing.Point(109, 65);
+            this.pictureBox.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(668, 617);
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
             // 
-            // button1
+            // generateButton
             // 
-            this.button1.Location = new System.Drawing.Point(258, 518);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Generate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.generateButton.Location = new System.Drawing.Point(385, 693);
+            this.generateButton.Margin = new System.Windows.Forms.Padding(4);
+            this.generateButton.Name = "generateButton";
+            this.generateButton.Size = new System.Drawing.Size(136, 52);
+            this.generateButton.TabIndex = 1;
+            this.generateButton.Text = "Generate";
+            this.generateButton.UseVisualStyleBackColor = true;
+            this.generateButton.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // areaUnitSizeLabel
             // 
-            this.button2.Location = new System.Drawing.Point(384, 540);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 20);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Save results";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.areaUnitSizeLabel.AutoSize = true;
+            this.areaUnitSizeLabel.Location = new System.Drawing.Point(165, 690);
+            this.areaUnitSizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.areaUnitSizeLabel.Name = "areaUnitSizeLabel";
+            this.areaUnitSizeLabel.Size = new System.Drawing.Size(102, 17);
+            this.areaUnitSizeLabel.TabIndex = 7;
+            this.areaUnitSizeLabel.Text = "Area unit size: ";
             // 
-            // checkBox1
+            // areaUnitSizeTrackBar
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(186, 519);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(59, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Normal";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.areaUnitSizeTrackBar.Location = new System.Drawing.Point(168, 713);
+            this.areaUnitSizeTrackBar.Minimum = 5;
+            this.areaUnitSizeTrackBar.Name = "areaUnitSizeTrackBar";
+            this.areaUnitSizeTrackBar.Size = new System.Drawing.Size(104, 56);
+            this.areaUnitSizeTrackBar.TabIndex = 8;
+            this.areaUnitSizeTrackBar.Value = 5;
+            this.areaUnitSizeTrackBar.Scroll += new System.EventHandler(this.elementSizeTrackBar_Scroll);
             // 
-            // checkBox2
+            // normalRadioButton
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(186, 543);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(66, 17);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Random";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.normalRadioButton.AutoSize = true;
+            this.normalRadioButton.Checked = true;
+            this.normalRadioButton.Location = new System.Drawing.Point(278, 693);
+            this.normalRadioButton.Name = "normalRadioButton";
+            this.normalRadioButton.Size = new System.Drawing.Size(74, 21);
+            this.normalRadioButton.TabIndex = 9;
+            this.normalRadioButton.TabStop = true;
+            this.normalRadioButton.Text = "Normal";
+            this.normalRadioButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // randomRadioButton
             // 
-            this.button3.Location = new System.Drawing.Point(384, 519);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 20);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Laplace";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.randomRadioButton.AutoSize = true;
+            this.randomRadioButton.Location = new System.Drawing.Point(278, 720);
+            this.randomRadioButton.Name = "randomRadioButton";
+            this.randomRadioButton.Size = new System.Drawing.Size(82, 21);
+            this.randomRadioButton.TabIndex = 10;
+            this.randomRadioButton.TabStop = true;
+            this.randomRadioButton.Text = "Random";
+            this.randomRadioButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // menuStrip1
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 535);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(26, 20);
-            this.textBox1.TabIndex = 6;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(908, 28);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // label1
+            // fileToolStripMenuItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(114, 519);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Element size";
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(161, 26);
+            this.saveToolStripMenuItem.Text = "Save results";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 572);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(908, 756);
+            this.Controls.Add(this.randomRadioButton);
+            this.Controls.Add(this.normalRadioButton);
+            this.Controls.Add(this.areaUnitSizeTrackBar);
+            this.Controls.Add(this.areaUnitSizeLabel);
+            this.Controls.Add(this.generateButton);
+            this.Controls.Add(this.pictureBox);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.areaUnitSizeTrackBar)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,14 +158,15 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox;
+        private System.Windows.Forms.Button generateButton;
+        private System.Windows.Forms.Label areaUnitSizeLabel;
+        private System.Windows.Forms.TrackBar areaUnitSizeTrackBar;
+        private System.Windows.Forms.RadioButton normalRadioButton;
+        private System.Windows.Forms.RadioButton randomRadioButton;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
     }
 }
 
